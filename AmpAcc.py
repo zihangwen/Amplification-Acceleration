@@ -40,7 +40,7 @@ results_dir.mkdir(parents=True, exist_ok=True)
 graph_name = "detour.txt" # this has to be in edge list format with node labels starting from 0 to N-1
 wm_name = "wm.txt"
 runs = 100_000
-s = 0.1
+s = 0.01
 
 # running simulation for graph interested:
 subprocess.run(
