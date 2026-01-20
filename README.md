@@ -9,23 +9,30 @@ Population structure is represented by a graph $G=(V,E)$, where each node corres
 
 ## Amplification factor
 The fixation probability of a new mutant in well-mixed (complete) graph is
+
 $$p_{fix, wm}=\frac{1-1/(1+s)}{1/(1+s)^N}$$
 
 In this repository, we define an amplification factor $\alpha$ by expressing the fixation probability on a graph as
+
 $$p_{fix, graph}=\frac{1-1/(1+\alpha s)}{1/(1+\alpha s)^N}$$
 
 An alternative, original definition (also implemented in the script) is
+
 $$p_{fix, graph}=\frac{1-1/(1+s)^{\alpha}}{1/(1+\alpha s)^{\alpha N}}$$
 
 While both parameterizations capture amplification effects and equivalant when $s\ll 1$, the former formulation is numerically more stable and easier to invert using `scipy.solve`.
 
 ## Acceleartion factor
 For the acceleration factor, we use the definition
+
 $$\lambda=\frac{T_{fix,wm}(s)}{T_{fix,graph}(s)}$$
+
 where $T_{fix}$ denotes the mean fixation time.
 
 A more principled definition would rescale selection in the well-mixed population by the amplification factor
+
 $$\lambda=\frac{T_{fix,wm}(\alpha s)}{T_{fix,graph}(s)}$$
+
 However, this formulation requires substantially longer simulation times and does not yield a measurable improvement in accuracy. We therefore adopt the former definition throughout for computational efficiency here.
 
 ## References
