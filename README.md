@@ -1,4 +1,4 @@
-## Repository for the calculation of the amplification factor and acceleration factor.
+## Repository for Bd simulation and calculation of the amplification factor and acceleration factor.
 
 ## reference
 - A theory of evolutionary dynamics on any complex population structure reveals stem cell niche architecture as a spatial suppressor of selection
