@@ -26,11 +26,13 @@ While both parameterizations capture amplification effects and equivalant when $
 For the acceleration factor, we use the definition
 
 $$\lambda=\frac{T_{fix,wm}(s)}{T_{fix,graph}(s)}$$
+
 where $T_{fix}$ denotes the mean fixation time.
 
 A more principled definition would rescale selection in the well-mixed population by the amplification factor
 
 $$\lambda=\frac{T_{fix,wm}(\alpha s)}{T_{fix,graph}(s)}$$
+
 However, this formulation requires substantially longer simulation times and does not yield a measurable improvement in accuracy. We therefore adopt the former definition throughout for computational efficiency here.
 
 ## References
