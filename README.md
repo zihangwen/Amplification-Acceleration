@@ -18,7 +18,7 @@ $$p_{fix, graph}=\frac{1-1/(1+\alpha s)}{1/(1+\alpha s)^N}$$
 
 An alternative, original definition (also implemented in the script) is
 
-$$p_{fix, graph}=\frac{1-1/(1+s)^{\alpha}}{1/(1+\alpha s)^{\alpha N}}$$
+$$p_{fix, graph}=\frac{1-1/(1+s)^{\alpha}}{1/(1+s)^{\alpha N}}$$
 
 While both parameterizations capture amplification effects and equivalant when $s\ll 1$, the former formulation is numerically more stable and easier to invert using `scipy.solve`.
 
